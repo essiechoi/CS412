@@ -1,0 +1,6 @@
+<div *ngIf="dataLoaded">
+  <div *ngFor="let item of data">
+    {{ item.name }} - {{ item.details }}
+  </div>
+</div>
+<button (click)="fetchData()">Fetch Data</button>
